@@ -23,4 +23,3 @@ class InputData:
                     interval = f"{day}{i}:00-{i+1}:00"
                     intervals.append(interval)
             self.employee_worked_hours[tokenized_line[0]] = intervals
-        print(type(self.employee_worked_hours))
