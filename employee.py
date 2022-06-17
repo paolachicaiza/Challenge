@@ -1,4 +1,4 @@
-from constants import first_shift_hours, workday, weekend, second_shift_hours, third_shift_hours
+from parameters import get_day_type, rates, get_shift
 
 
 class Employee:
@@ -11,22 +11,10 @@ class Employee:
         payment = []
         for hour in self.worked_hours:
             day = hour[0:2]
+            day_type = get_day_type(day)
             time_slot = hour[2:]
-            if time_slot in first_shift_hours:
-                if day in workday:
-                    pay = 25
-                if day in weekend:
-                    pay = 30
-            if time_slot in second_shift_hours:
-                if day in workday:
-                    pay = 15
-                if day in weekend:
-                    pay = 20
-            if time_slot in third_shift_hours:
-                if day in workday:
-                    pay = 20
-                if day in weekend:
-                    pay = 25
+            shift = get_shift(time_slot)
+            pay = rates[day_type][shift]
             payment.append(pay)
         self.total_payment = sum(payment)
 
