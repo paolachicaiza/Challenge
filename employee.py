@@ -29,3 +29,6 @@ class Employee:
                     pay = 25
             payment.append(pay)
         self.total_payment = sum(payment)
+
+    def print_payment(self):
+        print(f"The amount to pay {self.name} is: {self.total_payment} USD")
