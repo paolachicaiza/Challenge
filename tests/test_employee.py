@@ -13,7 +13,3 @@ class TestEmployee(unittest.TestCase):
         expected = 215
 
         self.assertEqual(actual,expected)
-
-
-
-
