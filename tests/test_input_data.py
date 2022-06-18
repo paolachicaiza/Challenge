@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from input_data import InputData
@@ -6,13 +7,13 @@ from input_data import InputData
 class TestInputData(unittest.TestCase):
     def test_read_data(self):
         input_data = InputData()
-        input_data.read_data("mock_data/test_data.txt")
+        input_data.read_data("test_data.txt")
         actual = input_data.lines
         self.assertTrue(len(actual) > 0)
 
     def test_parse_lines(self):
         input_data = InputData()
-        input_data.read_data("mock_data/test_data.txt")
+        input_data.read_data("test_data.txt")
         input_data.parse_lines()
         actual = input_data.employee_worked_hours
         expected = {

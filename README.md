@@ -69,6 +69,11 @@ There are two functions, the first, for calculating the worked hours and classif
 
 Using a dictionary, the program classifies the worked hours for each employee and assigns a specific rate per each worked hour. Finally, the program sums the rates for each worked hour and delivers a total payment for each employee.
 
-## Execute program
+### Clone 
+git clone https://github.com/paolachicaiza/Challenge-IOET-ACME
+
+### Execute program
+python main.py
 
 ## Run Unit Test
+python -m unittest discover -s ./tests -p '*.py'
