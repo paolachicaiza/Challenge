@@ -1,7 +1,6 @@
-import os
 import unittest
 
-from input_data import InputData
+from src.input_data import InputData
 
 
 class TestInputData(unittest.TestCase):

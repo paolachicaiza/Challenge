@@ -1,4 +1,4 @@
-from utils import generate_worked_intervals
+from src.utils import generate_worked_intervals
 
 
 class InputData:

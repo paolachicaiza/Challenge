@@ -1,4 +1,4 @@
-from parameters import get_day_type, rates, get_shift
+from src.parameters import get_day_type, get_shift, rates
 
 
 class Employee:

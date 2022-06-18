@@ -1,4 +1,4 @@
-from utils import generate_shift_intervals
+from src.utils import generate_shift_intervals
 
 workday = ["MO", "TU", "WE", "TH", "FR"]
 weekend = ["SA", "SU"]

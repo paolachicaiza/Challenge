@@ -1,6 +1,6 @@
 import unittest
 
-from employee import Employee
+from src.employee import Employee
 
 
 class TestEmployee(unittest.TestCase):
